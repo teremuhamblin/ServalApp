@@ -1,0 +1,24 @@
+name: Pull Request – ServalApp
+description: Proposition de modification ou amélioration
+body:
+  - type: textarea
+    id: changes
+    attributes:
+      label: Résumé des changements
+      placeholder: Décris clairement ce qui a été modifié
+    validations:
+      required: true
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: Tests effectués
+      placeholder: iPhone / iPad / Android
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes supplémentaires
+      placeholder: Informations complémentaires
