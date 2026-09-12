@@ -1,0 +1,35 @@
+- name: bug
+  color: ff3b30
+  description: Problème ou anomalie
+
+- name: enhancement
+  color: 34c759
+  description: Amélioration ou nouvelle fonctionnalité
+
+- name: ios
+  color: 007aff
+  description: Spécifique iPhone
+
+- name: ipad
+  color: 5ac8fa
+  description: Spécifique iPad
+
+- name: android
+  color: a3e635
+  description: Compatibilité Android
+
+- name: documentation
+  color: ffcc00
+  description: Documentation ServalApp
+
+- name: security
+  color: ff2d55
+  description: Sécurité / vulnérabilité
+
+- name: ui
+  color: 5856d6
+  description: Interface utilisateur
+
+- name: night-ops
+  color: 1c1c1e
+  description: Style militaire Night‑Ops
