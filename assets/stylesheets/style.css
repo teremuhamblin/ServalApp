@@ -1,24 +1,32 @@
 /* ---------------------------------------------------------
    ServalApp – Night‑Ops Tactical UI
-   Modern CSS – 2026 Edition
+   MAX CSS – 2026 Edition
 --------------------------------------------------------- */
 
-/* Font + Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base */
 body {
   font-family: 'Inter', sans-serif;
   background: #0f1115;
   color: #e5e7eb;
   line-height: 1.6;
   padding: 0 1rem;
+  overflow-x: hidden;
 }
 
-/* Global Layout */
+/* Dark Mode Manual Toggle */
+html.dark body {
+  background: #0b0d11;
+  color: #d1d5db;
+}
+
+/* Layout */
 .app {
   max-width: 900px;
   margin: 0 auto;
@@ -55,12 +63,23 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid #2a2f38;
-  transition: 0.25s ease;
+  transition: 0.25s ease, opacity .6s ease, transform .6s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.block.reveal {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
 }
 
 .block:hover {
   border-color: #3b82f6;
-  box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
 }
 
 .block h2 {
@@ -96,7 +115,7 @@ body {
   text-decoration: underline;
 }
 
-/* Disabled items */
+/* Disabled */
 .disabled {
   color: #6b7280;
   font-style: italic;
@@ -122,7 +141,106 @@ body {
   color: #f3f4f6;
 }
 
-/* Responsive */
+/* ---------------------------------------------------------
+   Toasts – Tactical Notifications
+--------------------------------------------------------- */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.toast {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .4s ease, transform .4s ease;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------------------------------------
+   Modal – Tactical Overlay
+--------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+.modal-box {
+  background: #1a1d23;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 20px rgba(59,130,246,0.35);
+}
+
+/* ---------------------------------------------------------
+   Loader – Military Pulse
+--------------------------------------------------------- */
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #0f1115;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9997;
+  transition: opacity .4s ease;
+}
+
+.loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader .pulse {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3b82f6;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+/* ---------------------------------------------------------
+   SPA Light – Screens
+--------------------------------------------------------- */
+.container screen {
+  animation: fadeScreen .4s ease;
+}
+
+@keyframes fadeScreen {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
 @media (max-width: 600px) {
   .title {
     font-size: 2rem;
@@ -131,15 +249,8 @@ body {
   .block {
     padding: 1.2rem;
   }
-}
 
-.block {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity .6s ease, transform .6s ease;
-}
-
-.block.visible {
-  opacity: 1;
-  transform: translateY(0);
+  .modal-box {
+    padding: 1.5rem;
+  }
 }
