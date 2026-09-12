@@ -1,0 +1,16 @@
+name: Security Scan – ServalApp
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Tous les lundis 03:00
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan JS
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
