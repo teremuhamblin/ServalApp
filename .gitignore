@@ -1,0 +1,14 @@
+###### .gitignore >> fichier brut
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (si futur build)
+node_modules/
+
+# Cache
+.cache/
+dist/
