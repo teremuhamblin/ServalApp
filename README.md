@@ -58,6 +58,11 @@ ServalApp/
     ├── onboarding.md
     ├── maps.md
     └── other_ideas.md
+    ├── deploying.md
+    ├── README-PAGES.md
+├── .github/
+│   ├── workflows/
+│   │   └── page.yml
 ```
 
 ---
