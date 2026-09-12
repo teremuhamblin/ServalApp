@@ -1,0 +1,26 @@
+name: CI – ServalApp
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Vérification HTML
+        uses: Cyb3r-Jak3/html5validator-action@v1.0.0
+
+      - name: Vérification CSS
+        uses: cssnano/cssnano-action@v1
+
+      - name: Vérification JS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          npm install -g eslint
+          eslint assets/javascripts/*.js
