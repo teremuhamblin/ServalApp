@@ -2,6 +2,10 @@
 # 📘 ServalApp
 Prototype modernisé du concept Serval Mesh, réorganisé en projet GitHub propre, stable et documenté.
 
+### 📱 Compatibilité
+- **ServalApp est actuellement optimisé pour **iPhone et iPad**, tous modèles et versions iOS.**
+- *Une **version Android** est en cours de développement et sera intégrée prochainement au projet*.
+
 - Ce dépôt contient :
    - une interface HTML statique servant de hub de navigation,
    - des écrans prototypes (iPhone, iPad, Chat Phase 1),
