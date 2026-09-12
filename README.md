@@ -21,6 +21,7 @@ ServalApp/
 ├── index.html
 │
 ├── assets/
+│   ├── README.md 
 │   ├── stylesheets/
 │   │   └── style.css
 │   ├── javascripts/
@@ -39,6 +40,7 @@ ServalApp/
 │       └── ms-TileImage.png
 │
 ├── screens/
+│   ├── README.md 
 │   ├── p1_s1.html
 │   ├── p1_s2.html
 │   ├── iphone_main.html
@@ -47,6 +49,7 @@ ServalApp/
 │   ├── iphone_media.html
 │
 └── docs/
+    ├── README.md 
     ├── briefing.md
     ├── rebranding.md
     ├── wireframe_one_on_one.md
