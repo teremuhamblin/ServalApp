@@ -1,4 +1,12 @@
-###### README.md >> markdown 
+###### README.md >> markdown
+
+![ServalApp](https://img.shields.io/badge/ServalApp-Night--Ops-black)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![iPhone](https://img.shields.io/badge/Support-iPhone-blue)
+![iPad](https://img.shields.io/badge/Support-iPad-lightblue)
+![Android](https://img.shields.io/badge/Android-En%20développement-yellow)
+![Security](https://img.shields.io/badge/Security-Scan%20Weekly-red)
+
 # 📘 ServalApp
 Prototype modernisé du concept Serval Mesh, réorganisé en projet GitHub propre, stable et documenté.
 
@@ -24,6 +32,18 @@ Prototype modernisé du concept Serval Mesh, réorganisé en projet GitHub propr
    - Le dossier assets/icons/ contient toutes les images nécessaires.
    - Le code est prêt pour GitHub Pages ou tout hébergement statique.
 
+### 🏷️ Labels ServalApp
+- ServalApp utilise un pack de labels tactiques pour organiser le projet :
+   - `bug` – anomalies
+   - `enhancement` – améliorations
+   - `ios` – compatibilité iPhone
+   - `ipad` – compatibilité iPad
+   - `android` – compatibilité Android
+   - `documentation` – docs
+   - `security` – sécurité
+   - `ui` – interface utilisateur
+   - `night-ops` – style militaire
+ 
 ### 📂 Structure du projet
 ```text
 ServalApp/
