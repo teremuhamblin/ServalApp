@@ -70,8 +70,11 @@ ServalApp/
     ├── deploying.md
     ├── README-PAGES.md
 ├── .github/
+│   └── .gitkeep
+│   ├── ISSUE_TEMPLATE/
+│   │   └── .gitkeep
 │   ├── workflows/
-│   │   └── page.yml
+│   │   └── .gitkeep
 ```
 
 ---
