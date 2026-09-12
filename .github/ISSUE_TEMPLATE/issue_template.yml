@@ -1,0 +1,27 @@
+name: Rapport d'anomalie
+description: Signaler un bug ou un comportement inattendu dans ServalApp
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Décris le problème rencontré
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes de reproduction
+      placeholder: 1. … 2. … 3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: device
+    attributes:
+      label: Appareil
+      placeholder: iPhone / iPad / Android (modèle + version)
+    validations:
+      required: true
