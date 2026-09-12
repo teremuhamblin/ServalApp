@@ -1,0 +1,14 @@
+name: Sync Labels
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: crazy-max/ghaction-github-labeler@v4
+        with:
+          yaml_file: .github/labels.yml
