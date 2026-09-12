@@ -16,7 +16,13 @@ Prototype modernisé du concept Serval Mesh, réorganisé en projet GitHub propr
    - une structure d’assets modernisée,
    - une documentation regroupée dans docs/.
 
----
+### 🔧 Explication intégrée
+> **INDEX.HTML**
+- Ton index.html est maintenant auto‑suffisant :
+   - Tous les liens d’icônes sont intégrés directement dans le <head>.
+   - Compatibilité iPhone / iPad / Android / Windows / Web.
+   - Le dossier assets/icons/ contient toutes les images nécessaires.
+   - Le code est prêt pour GitHub Pages ou tout hébergement statique.
 
 ### 📂 Structure du projet
 ```text
