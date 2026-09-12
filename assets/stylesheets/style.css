@@ -1,0 +1,134 @@
+/* ---------------------------------------------------------
+   ServalApp – Night‑Ops Tactical UI
+   Modern CSS – 2026 Edition
+--------------------------------------------------------- */
+
+/* Font + Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f1115;
+  color: #e5e7eb;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Global Layout */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block {
+  background: #1a1d23;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #2a2f38;
+  transition: 0.25s ease;
+}
+
+.block:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+}
+
+.block h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #f9fafb;
+}
+
+.phase {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 0.8rem;
+}
+
+/* Links */
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.links a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  transition: 0.2s ease;
+}
+
+.links a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Disabled items */
+.disabled {
+  color: #6b7280;
+  font-style: italic;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .block {
+    padding: 1.2rem;
+  }
+}
