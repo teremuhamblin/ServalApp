@@ -13,10 +13,51 @@ Prototype modernisé du concept Serval Mesh, réorganisé en projet GitHub propr
 ### 📂 Structure du projet
 ```text
 ServalApp/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
 ├── index.html
+│
 ├── assets/
+│   ├── stylesheets/
+│   │   └── style.css
+│   ├── javascripts/
+│   │   ├── modernizr.js
+│   │   ├── jquery.min.js
+│   │   ├── bootstrap.js
+│   │   ├── svg.js
+│   │   ├── flexslider.js
+│   │   └── scripts.js
+│   └── icons/
+│       ├── favicon.ico
+│       ├── apple-touch-icon-57.png
+│       ├── apple-touch-icon-72.png
+│       ├── apple-touch-icon-114.png
+│       ├── apple-touch-icon-144.png
+│       └── ms-TileImage.png
+│
 ├── screens/
+│   ├── p1_s1.html
+│   ├── p1_s2.html
+│   ├── iphone_main.html
+│   ├── ipad_main.html
+│   ├── iphone_conversation.html
+│   ├── iphone_media.html
+│
 └── docs/
+    ├── briefing.md
+    ├── rebranding.md
+    ├── wireframe_one_on_one.md
+    ├── wireframe_camera.md
+    ├── succint_data.md
+    ├── adoption.md
+    ├── initial_wireframe.md
+    ├── proposal.md
+    ├── onboarding.md
+    ├── maps.md
+    └── other_ideas.md
 ```
 
 ---
