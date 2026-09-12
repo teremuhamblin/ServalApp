@@ -94,14 +94,34 @@ git clone git@github.com:teremu/ServalApp.git
 
 ---
 
+### 🛠️ Développement
+- HTML / CSS / JS 100% Vanilla
+- Animations tactiques Night‑Ops
+- Scripts optimisés pour iPhone/iPad
+- Android en cours d’intégration
+
+---
+
+### 🔐 Sécurité
+Scan automatique chaque semaine.  
+Les failles doivent être signalées via `SECURITY.md`.
+
+---
+
+### 🤝 Contribution
+Voir `CONTRIBUTING.md`.  
+Tests obligatoires iPhone/iPad avant PR.
+
+---
+
 ### 🛡 Style militaire (optionnel)
 - Tu peux activer le thème Night‑Ops ou GCM Tactical dans assets/stylesheets/style.css.
 
 ---
 
 ### 📜 Licence
-
-Ce projet utilise The Unlicense
+- Projet ServalApp 2026
+   - Ce projet utilise The Unlicense
 ```md
 Ce projet est placé dans le domaine public via The Unlicense.  
 Vous pouvez utiliser, modifier, distribuer et vendre ce logiciel librement, sans aucune restriction.
