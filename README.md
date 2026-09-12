@@ -25,9 +25,7 @@ ServalApp/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-│
 ├── index.html
-│
 ├── assets/
 │   ├── README.md 
 │   ├── stylesheets/
@@ -40,13 +38,8 @@ ServalApp/
 │   │   ├── flexslider.js
 │   │   └── scripts.js
 │   └── icons/
-│       ├── favicon.ico
-│       ├── apple-touch-icon-57.png
-│       ├── apple-touch-icon-72.png
-│       ├── apple-touch-icon-114.png
-│       ├── apple-touch-icon-144.png
-│       └── ms-TileImage.png
-│
+│       ├── README.md
+│       └── complet-image.jpg
 ├── screens/
 │   ├── README.md 
 │   ├── p1_s1.html
@@ -55,7 +48,6 @@ ServalApp/
 │   ├── ipad_main.html
 │   ├── iphone_conversation.html
 │   ├── iphone_media.html
-│
 └── docs/
     ├── README.md 
     ├── briefing.md
