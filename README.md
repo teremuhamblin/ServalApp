@@ -3,8 +3,8 @@
 ![ServalApp](https://img.shields.io/badge/ServalApp-Night--Ops-black)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![iPhone](https://img.shields.io/badge/Support-iPhone-blue)
-![iPad](https://img.shields.io/badge/Support-iPad-lightblue)
-![Android](https://img.shields.io/badge/Android-En%20développement-yellow)
+![iPad](https://img.shields.io/badge/Support-iPad-blue)
+![Android](https://img.shields.io/badge/Android-En%20développement-blue)
 ![Security](https://img.shields.io/badge/Security-Scan%20Weekly-red)
 
 # 📘 ServalApp
